@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - Green Haven</title>
+    <link href="final.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Green Haven</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="1.html">Home</a></li>
+                    <li><a href="2.html">Our Plants</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="order-confirmation">
+        <h2>Order Confirmation</h2>
+
+        <div id="order-details">
+            <h3>Plant Details</h3>
+            <p><strong>Plant Name:</strong> <span id="plant-name">---</span></p>
+            <p><strong>Scientific Name:</strong> <span id="scientific-name">---</span></p>
+            <p><strong>Unit Price:</strong> $<span id="unit-price">---</span></p>
+            <p><strong>Care Level:</strong> <span id="care-level">---</span></p>
+            <p><strong>Description:</strong> <span id="description">---</span></p>
+            <p><strong>Total Cost:</strong> $<span id="total-cost">---</span></p>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" value="1" min="1" onchange="updateTotal()">
+        </div>
+
+        <h3>Shipping Details</h3>
+        <form id="shipping-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" required></textarea>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+
+            <button type="submit" onclick="confirmOrder(event)">Confirm Order</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Green Haven. All Rights Reserved.</p>
+    </footer>
+
+    <script src="final.js"></script>
+</body>
+</html>

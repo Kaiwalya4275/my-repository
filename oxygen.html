@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oxygen-Rich Plants - Green Haven</title>
+    <link href="easy.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="easy.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Green Haven</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="1.html">Home</a></li>
+                    <li><a href="2.html">Our Plants</a></li>
+                    <li><a href="#types">Oxygen-Rich Plants</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="types" class="products">
+        <h2>Explore Oxygen-Rich Plants</h2>
+        <div class="product-grid">
+            <!-- Product Cards with Prices -->
+            <div class="product-card">
+                <img src="oxygen_plant1.jpg" alt="Snake Plant">
+                <h3>Snake Plant</h3>
+                <p>Great for indoor air purification and low maintenance.</p>
+                <p class="price">$15.99</p>
+                <button onclick="addToCart('Snake Plant', 15.99)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="oxygen_plant2.jpg" alt="Spider Plant">
+                <h3>Spider Plant</h3>
+                <p>Perfect for reducing toxins and purifying the air.</p>
+                <p class="price">$12.99</p>
+                <button onclick="addToCart('Spider Plant', 12.99)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="oxygen_plant3.jpg" alt="Aloe Vera">
+                <h3>Aloe Vera</h3>
+                <p>Air-purifying and also used for skin care.</p>
+                <p class="price">$20.00</p>
+                <button onclick="addToCart('Aloe Vera', 20.00)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="oxygen_plant4.jpg" alt="Peace Lily">
+                <h3>Peace Lily</h3>
+                <p>Known for removing toxins and improving air quality.</p>
+                <p class="price">$18.99</p>
+                <button onclick="addToCart('Peace Lily', 18.99)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="oxygen_plant5.jpg" alt="Areca Palm">
+                <h3>Areca Palm</h3>
+                <p>A natural humidifier and air purifier.</p>
+                <p class="price">$25.00</p>
+                <button onclick="addToCart('Areca Palm', 25.00)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="oxygen_plant6.jpg" alt="Rubber Plant">
+                <h3>Rubber Plant</h3>
+                <p>Effective at absorbing airborne chemicals.</p>
+                <p class="price">$22.99</p>
+                <button onclick="addToCart('Rubber Plant', 22.99)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="oxygen_plant7.jpg" alt="Bamboo Palm">
+                <h3>Bamboo Palm</h3>
+                <p>Great for filtering toxins and adding greenery.</p>
+                <p class="price">$19.99</p>
+                <button onclick="addToCart('Bamboo Palm', 19.99)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="oxygen_plant8.jpg" alt="Boston Fern">
+                <h3>Boston Fern</h3>
+                <p>Improves humidity and purifies indoor air.</p>
+                <p class="price">$17.50</p>
+                <button onclick="addToCart('Boston Fern', 17.50)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="oxygen_plant9.jpg" alt="Chinese Evergreen">
+                <h3>Chinese Evergreen</h3>
+                <p>Easy to maintain and excellent for air purification.</p>
+                <p class="price">$16.99</p>
+                <button onclick="addToCart('Chinese Evergreen', 16.99)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="oxygen_plant10.jpg" alt="Weeping Fig">
+                <h3>Weeping Fig</h3>
+                <p>Helps remove indoor air pollutants effectively.</p>
+                <p class="price">$21.00</p>
+                <button onclick="addToCart('Weeping Fig', 21.00)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="oxygen_plant11.jpg" alt="Philodendron">
+                <h3>Philodendron</h3>
+                <p>Known for its ability to absorb harmful chemicals.</p>
+                <p class="price">$14.99</p>
+                <button onclick="addToCart('Philodendron', 14.99)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="oxygen_plant12.jpg" alt="Fiddle Leaf Fig">
+                <h3>Fiddle Leaf Fig</h3>
+                <p>A stylish plant that also purifies air.</p>
+                <p class="price">$27.99</p>
+                <button onclick="addToCart('Fiddle Leaf Fig', 27.99)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="oxygen_plant13.jpg" alt="Dracaena">
+                <h3>Dracaena</h3>
+                <p>Filters out common indoor toxins.</p>
+                <p class="price">$18.50</p>
+                <button onclick="addToCart('Dracaena', 18.50)">Add to Cart</button>
+            </div>
+        </div>
+        <div id="cart-message"></div>
+    </section>
+
+</body>
+</html>
