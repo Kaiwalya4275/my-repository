@@ -1,11 +1,8 @@
-// Initialize EmailJS with your User ID
 (function () {
-    emailjs.init("3kLCjXRG_Q43eWv0G"); // Replace with your actual User ID
+    emailjs.init("3kLCjXRG_Q43eWv0G"); 
 })();
 
-// Function to send the email notification using EmailJS
 function sendOrderConfirmationEmail() {
-    // Get order and shipping details from the form and page
     const plantName = document.getElementById('plant-name').textContent;
     const unitPrice = document.getElementById('unit-price').textContent;
     const quantity = document.getElementById('quantity').value;
@@ -18,15 +15,13 @@ function sendOrderConfirmationEmail() {
         phone: document.getElementById('phone').value
     };
 
-    // Validate the form inputs
     if (!shippingDetails.name || !shippingDetails.address || !shippingDetails.email || !shippingDetails.phone || !quantity) {
         alert("Please fill out all fields and ensure quantity is entered.");
         return;
     }
 
-    // Template parameters for EmailJS
     const templateParams = {
-        to_email: 'kaiwalyajadhav980@gmail.com',  // Replace with your email
+        to_email: 'kaiwalyajadhav980@gmail.com', 
         plant_name: plantName,
         quantity: quantity,
         unit_price: unitPrice,
@@ -40,7 +35,6 @@ function sendOrderConfirmationEmail() {
                   ${shippingDetails.address}. Contact: ${shippingDetails.phone}. Email: ${shippingDetails.email}.`
     };
 
-    // Send email via EmailJS
     emailjs.send('service_u04hew8', 'template_n19xa4y', templateParams)
         .then(function (response) {
             console.log('Email sent successfully!', response.status, response.text);
@@ -53,7 +47,6 @@ function sendOrderConfirmationEmail() {
         });
 }
 
-// Add an event listener to the "Confirm Order" button
 document.getElementById('shipping-form').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent form submission
     sendOrderConfirmationEmail(); // Call email sending function
