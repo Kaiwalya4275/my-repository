@@ -1,14 +1,12 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body & Global Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #eaf5f2; /* Light, calming background */
+    background-color: #eaf5f2; 
     color: #333;
     display: flex;
     flex-direction: column;
@@ -16,9 +14,8 @@ body {
     min-height: 100vh;
 }
 
-/* Header Styling */
 header {
-    background-color: #4caf50; /* Green */
+    background-color: #4caf50; 
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -33,7 +30,6 @@ header .logo {
     font-weight: bold;
 }
 
-/* Navigation Bar */
 nav {
     margin-top: 15px;
 }
@@ -63,7 +59,6 @@ nav ul li a:hover {
     background-color: #2e7d32;
 }
 
-/* Section Styling */
 section {
     width: 100%;
     max-width: 1200px;
@@ -77,7 +72,6 @@ h2 {
     margin-bottom: 40px;
 }
 
-/* Product Grid Styling */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -150,7 +144,6 @@ h2 {
     background-color: #2e7d32;
 }
 
-/* Popup Styling */
 .popup {
     display: none;
     position: fixed;
@@ -193,7 +186,6 @@ h2 {
     background-color: #45a049;
 }
 
-/* Footer Styling */
 footer {
     background-color: #388e3c;
     color: white;

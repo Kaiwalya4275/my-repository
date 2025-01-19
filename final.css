@@ -1,4 +1,4 @@
-/* General styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,7 +7,6 @@ body {
     color: #333;
 }
 
-/* Header styles */
 header {
     background-color: #4CAF50;
     padding: 1rem 0;
@@ -104,7 +103,6 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Footer styles */
 footer {
     text-align: center;
     padding: 1rem 0;
@@ -113,7 +111,7 @@ footer {
     margin-top: 2rem;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;

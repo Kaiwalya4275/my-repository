@@ -40,7 +40,7 @@ function sendOrderConfirmationEmail() {
             console.log('Email sent successfully!', response.status, response.text);
             alert('Order confirmed! A confirmation email has been sent.');
             // Redirect to a thank-you page
-            window.location.href = "thankyou.html"; // Replace with your thank-you page URL
+            window.location.href = "thankyou.html";
         }, function (error) {
             console.error('Failed to send email...', error);
             alert('Something went wrong while sending the confirmation email.');
@@ -48,6 +48,6 @@ function sendOrderConfirmationEmail() {
 }
 
 document.getElementById('shipping-form').addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent form submission
-    sendOrderConfirmationEmail(); // Call email sending function
+    event.preventDefault();
+    sendOrderConfirmationEmail(); 
 });

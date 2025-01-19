@@ -1,11 +1,11 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -16,7 +16,6 @@ body {
     margin: 0;
 }
 
-/* Container for login and registration */
 .login-container, .register-container {
     background-color: white;
     padding: 40px;
@@ -31,7 +30,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Form fields */
+
 input {
     width: 100%;
     padding: 10px;
@@ -55,7 +54,6 @@ button:hover {
     background-color: #228b22;
 }
 
-/* Links */
 p {
     margin-top: 10px;
 }
