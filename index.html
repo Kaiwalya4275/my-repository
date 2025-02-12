@@ -109,9 +109,45 @@
             </form>
         </div>
     </section>
+    <!-- Footer Section -->
+<footer style="background-color: #111; color: #fff; padding: 40px 20px; font-family: Arial, sans-serif; line-height: 1.6;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto;">
+        <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+            <h3 style="color: #28a745; margin-bottom: 10px;">YourCompany</h3>
+            <p>Delivering excellence and innovation since [Year].</p>
+        </div>
+        <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+            <h4 style="margin-bottom: 10px;">Quick Links</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 5px;"><a href="#home" style="color: #bbb; text-decoration: none;">Home</a></li>
+                <li style="margin-bottom: 5px;"><a href="#about" style="color: #bbb; text-decoration: none;">About Us</a></li>
+                <li style="margin-bottom: 5px;"><a href="2.html" style="color: #bbb; text-decoration: none;">Services</a></li>
+                <li style="margin-bottom: 5px;"><a href="#contact" style="color: #bbb; text-decoration: none;">Contact</a></li>
+            </ul>
+        </div>
+        <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+            <h4 style="margin-bottom: 10px;">Contact Us</h4>
+            <p>Email: info@yourcompany.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Street, City, Country</p>
+        </div>
+    </div>
+    <hr style="border: 0; border-top: 1px solid #444; margin: 20px 0;">
+    <div style="text-align: center;">
+        <p>&copy; <span id="year"></span> Plantify. All rights reserved.</p>
+        <button onclick="scrollToTop()" style="background: #28a745; color: white; border: none; padding: 10px 15px; cursor: pointer; border-radius: 5px; margin-top: 10px;">Back to Top</button>
+    </div>
+</footer>
+
+<script>
+    // Set dynamic year
+    document.getElementById("year").textContent = new Date().getFullYear();
     
-    <footer>
-        <p>&copy; 2025 Plantify. All Rights Reserved.</p>
-    </footer>
+    // Scroll to top function
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
 </body>
 </html>
