@@ -78,6 +78,128 @@ nav {
     justify-content: flex-end; /* Align login/register links to the right */
 }
 
+
+
+/* 🌿 Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* 🌿 Reset & Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body .main-navigation {
+    background: linear-gradient(to right, #e3f9e5, #c1dfc4);
+}
+
+/* 🌿 Navigation Bar */
+.main-navigation {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    position: relative;
+    margin: 0 20px;
+}
+
+/* 🌿 Main Menu Links */
+.menu a {
+    text-decoration: none;
+    color: #2c5f2d;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.menu a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+/* 🌿 Submenu Styles */
+.sub-menu-wrapper {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.sub-menu {
+    list-style: none;
+}
+
+.sub-menu li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sub-menu a {
+    display: block;
+    padding: 12px 15px;
+    color: #256029;
+    font-weight: 400;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.sub-menu a:hover {
+    background: #2c5f2d;
+    color: #fff;
+    padding-left: 20px;
+}
+
+/* 🌿 Dropdown Hover Effect */
+.menu li:hover .sub-menu-wrapper {
+    display: block;
+    opacity: 1;
+    transform: translateY(5px);
+}
+
+/* 🌿 Responsive Design */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .sub-menu-wrapper {
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+}
+
+
+
 /* General Hero Section Styling */
 .hero {
     position: relative;
@@ -119,6 +241,13 @@ nav {
     opacity: 0.7;
     
 }
+
+
+
+
+
+
+
 
 /* Upper Section Styling */
 .hero-upper {
@@ -760,3 +889,6 @@ footer p {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-5px); }
 }
+
+
+
