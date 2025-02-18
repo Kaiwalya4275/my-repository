@@ -449,17 +449,20 @@ body {
     background-color: #c2cdb0;
 }
 
+/* About Section Styling */
 .about {
     position: relative;
-    padding: 60px 20px;
+    padding: 80px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: #333;
     overflow: hidden;
+    background: linear-gradient(135deg, #f3f4f6, #dbeafe);
 }
 
+/* Video Background Styling */
 .video-background1 {
     position: absolute;
     top: 0;
@@ -474,9 +477,11 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.3;
+    opacity: 0.25;
+    filter: blur(3px);
 }
 
+/* About Section Content */
 .about-container {
     display: flex;
     flex-wrap: wrap;
@@ -484,91 +489,105 @@ body {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    gap: 30px;
 }
-.about-text:hover{
-    color: #00000054;
-    transform: translateY(-20px); /* Move further up */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.703); /* Stronger shadow for emphasis */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.about-text:focus-within {
-    transform: translateY(-20px);
-    color: rgba(0, 0, 0, 0.234);
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-}
+
 .about-text {
     flex: 1 1 60%;
-    padding: 20px;
+    padding: 25px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+    animation: fadeInLeft 1.2s ease-in-out;
+}
 
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    animation: fadeInLeft 1s ease-in-out;
+.about-text:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .about-text h2 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     margin-bottom: 20px;
-    color: #000000;
+    color: #1a202c;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
 }
 
 .about-text p {
-    font-size: 1.1em;
-    line-height: 1.8;
-    margin-bottom: 15px;
-    color: #000000;
+    font-size: 1.2em;
+    line-height: 1.9;
+    margin-bottom: 20px;
+    color: #2d3748;
+    text-align: justify;
 }
 
 .brand-name {
     font-weight: bold;
-    color: #3182ce;
+    color: #2563eb;
 }
 
 .about-values {
     list-style: none;
     padding: 0;
     margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .about-values li {
-    margin: 10px 0;
-    font-size: 1.1em;
-    color: #000000;
+    font-size: 1.2em;
+    color: #1e293b;
     display: flex;
     align-items: center;
+    gap: 12px;
+    background: #ebf8ff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-values li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 .about-values li strong {
-    margin-right: 10px;
-    color: #2c7a7b;
+    color: #065f46;
 }
 
+/* About Images */
 .about-images {
     flex: 1 1 35%;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
     justify-content: center;
-    animation: fadeInRight 1s ease-in-out;
+    animation: fadeInRight 1.2s ease-in-out;
 }
 
 .about-images img {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #3182ce;
-    transition: transform 0.3s ease;
+    border: 4px solid #2563eb;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .about-images img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 /* Animations */
 @keyframes fadeInLeft {
     from {
         opacity: 0;
-        transform: translateX(-50px);
+        transform: translateX(-60px);
     }
     to {
         opacity: 1;
@@ -579,7 +598,7 @@ body {
 @keyframes fadeInRight {
     from {
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(60px);
     }
     to {
         opacity: 1;
@@ -587,6 +606,25 @@ body {
     }
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text, .about-images {
+        flex: 1 1 100%;
+    }
+
+    .about-text h2 {
+        font-size: 2.2em;
+    }
+
+    .about-values li {
+        font-size: 1em;
+    }
+}
 /* Contact Section Styling */
 .contact {
     padding: 60px 20px;
