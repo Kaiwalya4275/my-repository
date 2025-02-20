@@ -19,7 +19,7 @@ document.getElementById('login-form').addEventListener('submit', function(e) {
 
     if (user) {
         alert('Login successful');
-        window.location.href = 'index.html'; // Redirect to the main page (index.html)
+        window.location.href = 'final.html'; // Redirect to the main page (index.html)
     } else {
         alert('Invalid email or password. Please try again.');
     }

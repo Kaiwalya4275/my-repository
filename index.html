@@ -32,6 +32,43 @@
         </div>
     </header>
 
+
+    <div class="template-slider">
+        <div class="slide active">
+            <img src="offer1.webp" alt="Offer 1">
+        </div>
+        <div class="slide">
+            <img src="offer2.png" alt="Offer 2">
+        </div>
+       
+        <div class="slide">
+            <img src="offer4.png" alt="Offer 4">
+        </div>
+    </div>
+    
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".slide");
+    let currentIndex = 0;
+    const slideInterval = 3000; // Time per slide (in milliseconds)
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle("active", i === index);
+        });
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    // Auto-slide every X seconds
+    setInterval(nextSlide, slideInterval);
+});
+
+</script>
+    
     
     <div class="col-full-nav">
         <div class="shoptimizer-primary-navigation col-full">      
